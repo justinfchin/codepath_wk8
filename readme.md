@@ -16,23 +16,46 @@ Each version of the site has been given two of the six vulnerabilities. (In othe
 
 ## Blue
 
-Vulnerability #1: __________________
+Vulnerability #1: 1. Username Enumeration
+  - GIF Walkthrough:
+    - ![1]()
+  - Details:
+    - Looking at the 'Inspect Elements' you can see that the span class was different (failed vs. failure). This resulted in the bolding of 'Log in was unsuccessful' for valid usernames. Looking at the 'Sources' section, we can see under 'styles.css' that there is 'span.failure' which changes the font to bold.  
 
-Vulnerability #2: __________________
-
-
+Vulnerability #2: 
+  - GIF Walkthrough:
+    - ![2]()
+  - Details:
+    - hi
+---
 ## Green
 
-Vulnerability #1: __________________
+Vulnerability #1: 
+  - GIF Walkthrough:
+    - ![3]()
+  - Details:
+    - hi
 
-Vulnerability #2: __________________
+Vulnerability #2: 
+  - GIF Walkthrough:
+    - ![4]()
+  - Details:
+    - hi
 
-
+---
 ## Red
 
-Vulnerability #1: __________________
+Vulnerability #1: 
+  - GIF Walkthrough:
+    - ![5]()
+  - Details:
+    - hi
 
-Vulnerability #2: __________________
+Vulnerability #2: 
+  - GIF Walkthrough:
+    - ![6]()
+  - Details:
+    - hi
 
 
 ## Notes
