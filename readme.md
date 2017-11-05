@@ -18,16 +18,19 @@ Each version of the site has been given two of the six vulnerabilities. (In othe
 
 Vulnerability #1: 1. Username Enumeration
   - GIF Walkthrough:
-    - ![1]()
+    - ![1](https://github.com/justinfchin/codepath_wk8/blob/master/gifs/1.gif?raw-true)
   - Details:
-    - Looking at the 'Inspect Elements' you can see that the span class was different (failed vs. failure). This resulted in the bolding of 'Log in was unsuccessful' for valid usernames. Looking at the 'Sources' section, we can see under 'styles.css' that there is 'span.failure' which changes the font to bold.  
+    - Noticed when accidentally entered pperson / address combination wrong on the login page. Noticed that the error had different font style than corect username. 
+    - First go to the login page. 
+    - Looking at the **Inspect Elements** you can see that the span class was different (failed vs. failure). This resulted in the bolding of **Log in was unsuccessful** for valid usernames. Looking at the **Sources** section, we can see under **styles.css** that there is **span.failure** which changes the font to bold.  
 
-Vulnerability #2: 
+Vulnerability #2: 3. SQLI
   - GIF Walkthrough:
-    - ![2]()
+    - ![2](https://github.com/justinfchin/codepath_wk8/blob/master/gifs/3.gi    f?raw-true)
   - Details:
-    - hi
----
+    - First go to a Salesperson. Then in the URL next to id=1 for eg. write ''' ' AND SLEEP(5)=0--' '''. 
+      - Note: you could also replace AND with OR just be sure to remove the number next to id. 
+
 ## Green
 
 Vulnerability #1: 
@@ -42,14 +45,16 @@ Vulnerability #2:
   - Details:
     - hi
 
----
 ## Red
 
-Vulnerability #1: 
+Vulnerability #1: 2. IDOR
   - GIF Walkthrough:
-    - ![5]()
+    - ![5](https://github.com/justinfchin/codepath_wk8/blob/master/gifs/2.gi    f?raw-true)
   - Details:
-    - hi
+    - Noticed when logging in as pperson, we see that there are two Salespersons who has information that should not be public. We look at **Lazy** and **Testy**. Note that they have ids **11** and **10** respectively.
+    - First go to Find a Salesperson and click on the first name.
+    - Then change id to 11 or 10. 
+    - The other sites redirect the user to the main **Find a Salesperson** page. 
 
 Vulnerability #2: 
   - GIF Walkthrough:
