@@ -18,7 +18,7 @@ Each version of the site has been given two of the six vulnerabilities. (In othe
 
 Vulnerability #1: 3. SQLI
   - GIF Walkthrough:
-    - ![2](https://github.com/justinfchin/codepath_wk8/blob/master/gifs/3.gif?raw=true)
+    - ![2](https://github.com/justinfchin/codepath_wk8/blob/master/gifs/3.gif?raw)
   - Details:
     - First go to a Salesperson. Then in the URL next to id=1 for eg. write ```' AND SLEEP(5)=0--' ```. 
       - Note: you could also replace AND with OR just be sure to remove the number next to id. 
