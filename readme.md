@@ -28,10 +28,7 @@ Vulnerability #2: 3. SQLI
   - GIF Walkthrough:
     - ![2](https://github.com/justinfchin/codepath_wk8/blob/master/gifs/3.gif?raw-true)
   - Details:
-    - First go to a Salesperson. Then in the URL next to id=1 for eg. write 
-    '''sql 
-    ' AND SLEEP(5)=0--' 
-    '''. 
+    - First go to a Salesperson. Then in the URL next to id=1 for eg. write ```sql ' AND SLEEP(5)=0--' ```. 
       - Note: you could also replace AND with OR just be sure to remove the number next to id. 
 
 ## Green
