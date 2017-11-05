@@ -98,7 +98,7 @@ Vulnerability #2: 5. CSRF
 Describe any challenges encountered while doing the work
 
 ## Personal Notes
-  - Had to learn how to create my own local webserver to create the forms for vulnerability 6. 
+  - Had to learn how to create my own local webserver to create the forms for vulnerability 5. 
     - [Link to install local webserver](https://www.maketecheasier.com/setup-local-web-server-all-platforms/)
   - Also had to figure out how to hide the forms
     - [Link to hide forms](https://ctrlq.org/code/19233-submit-forms-with-javascript)
